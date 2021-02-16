@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>El Blog de Luis</title>
 </head>
 <body>
   <header>
     <nav>
-      <p>Setup</p>
+    <details open>
+      <summary>
+        Setup
+      </summary>
       <ol>
         <li>
           <a href="#google-chrome">Google Chrome</a> </li>
@@ -16,15 +20,21 @@
         <li><a href="#figma">Figma</a></li>
         <li><a href="#Git">GitHub</a></li>
       </ol>
-      <p>Conceptos esenciales del Desarrollo Web</p>
-      <ol>
-        <li><a href="#html">Qué es HTML</a></li>
-        <li><a href="#Etiquetas">Etiquetas</a></li>
-        <li><a href="#DOM">DOM</a></li>
-        <li><a href="#Semantica">Semántica</a></li>
-        <li><a href="#Atributos">Atributos</a></li>
-        <li><a href="#css">Qué es CSS</a></li>
-      </ol>
+    </details>
+    <details open>
+      <summary>
+        Conceptos esenciales del Desarrollo Web
+      </summary>
+        <ol>
+          <li><a href="#html">Qué es HTML</a></li>
+          <li><a href="#Etiquetas">Etiquetas</a></li>
+          <li><a href="#DOM">DOM</a></li>
+          <li><a href="#Semantica">Semántica</a></li>
+          <li><a href="#Atributos">Atributos</a></li>
+          <li><a href="#css">Qué es CSS</a></li>
+        </ol>
+
+    </details>
     </nav>
   </header>
   <h1>Curso esencial de HTML y CSS</h1>
@@ -51,12 +61,26 @@
   <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el
   mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
   manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
-
   <hr>
   <h2>Conceptos ecenciales Del Desarrollo Web</h2>
   <h3 id="html">Qué es HTML</h3>
   <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
-  y la estructura del contenido.</p>
+    y la estructura del contenido.</p>
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+
   <h3 id="Etiquetas">Etiquetas</h3>
   <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
   características y usos diferentes aunque visualmente den un resultado similar.</p>
