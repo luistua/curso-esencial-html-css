@@ -82,3 +82,18 @@ pre {
   background-repeat:repeat;
   height: 350px;
 }
+
+.section-content h3{
+  counter-increment: titleList;
+}
+.section-content h3::before {
+content: counter(titleList);
+}
+
+.section-content h3::after {
+display: inline-block;
+content: '';
+width: 32px;
+height: 4px;
+background: var(--gray30);
+}
