@@ -105,6 +105,8 @@ p{
 .section-content img {
   margin-block-start: 40px;
   display: block;
+  max-inline-size: 100%;
+  /* 100% Para que ocupe el 100% del tamaño según se achique el navegador y no se salga del wrapper */
 }
 .section-content h3{
   counter-increment: titleList;
@@ -130,4 +132,18 @@ blockquote {
 
 .main hr {
   display:none;
+}
+
+.main {
+
+}
+
+.wrapper {
+
+inline-size: 902px;
+margin: auto;
+}
+
+.main-content {
+
 }
