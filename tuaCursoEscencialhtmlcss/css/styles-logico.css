@@ -34,6 +34,7 @@ body {
   font-family: 'Nunito', sans-serif;
   /* font-family: charter; */
   background: #251F24;
+  margin: 0;
 ;
 }
 
@@ -67,16 +68,25 @@ h1 {
   font-size: 60px;
   /* para convertir en em sería dividir 60/16 */
   /* font-size: 3.75em; */
+  margin-block-start: 64px;
+  margin-inline-end: 16px;
 }
 
 h2 {
   font-size: 2em;
+  margin-block: 40px;
 }
 
 h3 {
   font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 16px;
 }
 
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
+}
 pre {
   background: var(--white10);
 ;
@@ -92,12 +102,15 @@ p{
   background-repeat:repeat;
   height: 350px;
 }
-
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+}
 .section-content h3{
   counter-increment: titleList;
 }
 .section-content h3::before {
-content: counter(titleList);
+content: counter(titleList,decimal)'. ';
 }
 
 .section-content h3::after {
@@ -106,4 +119,15 @@ content: '';
 width: 32px;
 height: 4px;
 background: var(--white30);
+}
+
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background: var(--white10);
+  border-radius: 8px;
+}
+
+.main hr {
+  display:none;
 }
