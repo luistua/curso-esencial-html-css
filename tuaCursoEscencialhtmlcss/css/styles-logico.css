@@ -41,12 +41,24 @@ body {
 a {
   color: var(--white30);
 }
+.header {
+  position: sticky;
+  inset-block-start: 0;
+}
+.header-content {
+  position: relative;
+}
 header {
   font-size: 14px;
   color:var(--white);
+  position: absolute;
+  inset-block-start: 65px;
+  inset-inline-start: -208px;
+  inline-size: 188px;
 }
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 header a {
   /* Sólo asignarle color porque la fuente sí la hereda bien. */
